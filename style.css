@@ -177,7 +177,7 @@ nav ul li a:hover::after {
 
 .work {
   color: white;
-  border-radius: 25px;
+  border-radius: 30px;
   position: relative;
   overflow: hidden;
 }
@@ -190,17 +190,16 @@ nav ul li a:hover::after {
 
 .work img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 30px;
   display: block;
   transition: 0.5s;
-  
 }
 
 .layer {
   width: 100%;
   height: 0%;
   background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
-  border-radius: 10px;
+  border-radius: 30px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -220,7 +219,7 @@ nav ul li a:hover::after {
   margin-bottom: 20px;
 }
 
-.layer a{
+.layer a {
   margin-top: 25px;
   color:#ec3e75;
   text-decoration: none;
