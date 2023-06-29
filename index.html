@@ -9,8 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - M. Haider Saeed</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/4f674c1400.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body> 
 
 <div id="header">
 
@@ -75,7 +76,43 @@
   </div>
 </div>
 
-<p id="demo"></p>
+<!------------------------My Projects---------------------->
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/proj1.PNG"/>
+        <div class="layer">
+          <h3>Optical Illusion Art Gallery</h3>
+          <p>Created a graphical scene and a short physics simulation using OpenGL & C++</p>
+          <a href="#"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/proj3.JPG">
+        <div class="layer">
+          <h3>Beer Recommender</h3>
+          <p>Used data analytics and algorithms on beer datasets in Apache Spark & Python. Program recommends beer 
+          based on similarity attributes & ratings.</p>
+          <a href="#"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/proj2.JPG">
+        <div class="layer">
+          <h3>Ray Traced Scene</h3>
+          <p>Created a graphical scene using ray tracing concepts and physics. Created using OpenGL & C++.</p>
+          <a href="#"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+</div>
+
 
 
 <script>
@@ -94,13 +131,6 @@
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add('active-tab');
   }
-
-  const cars = ["BMW", "Volvo", "Mini"];
-  let text = "";
-  for (let x of cars) {
-    text += x + "<br>";
-  }
-  document.getElementById("demo").innerHTML = text;
 
 
 </script>
