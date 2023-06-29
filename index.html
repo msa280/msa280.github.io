@@ -53,17 +53,17 @@
           updated with the latest advancements and trends.
         </p>
         <div class="tab-titles">
-          <p class="tab-links active-link">Skills</p>
-          <p class="tab-links">Education</p>
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
         </div>
-        <div class="tab-contents active-tab">
+        <div class="tab-contents active-tab" id="skills">
           <ul>
             <li><span>Python</span><br>Build Control and Management</li>
             <li><span>Java</span><br>Java Application</li>
             <li><span>UI/UX</span><br>Web & App Design</li>
           </ul>
         </div>
-        <div class="tab-contents">
+        <div class="tab-contents" id="education">
           <ul>
             <li><span>2020-2023</span><br>University of Canterbury - Bachelor of Science in Computer Science</li>
             <li><span>2017-2020</span><br>Lahore Grammar School - Cambridge O-Levels & A-Levels</li>
@@ -73,9 +73,36 @@
       </div>
     </div>
   </div>
-
 </div>
 
+<p id="demo"></p>
 
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  
+  let = "";
+  function opentab(tabname) {
+    tablinks.forEach(tablink => {
+      tablink.classList.remove("active-link");
+    });
+    
+    tabcontents.forEach(tabcontent => {
+      tabcontent.classList.remove("active-tab");
+    });
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add('active-tab');
+  }
+
+  const cars = ["BMW", "Volvo", "Mini"];
+  let text = "";
+  for (let x of cars) {
+    text += x + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+
+
+</script>
 </body>
 </html>
