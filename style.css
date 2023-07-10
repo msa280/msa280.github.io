@@ -1,8 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Times New Roman';
+  font-family: 'Roboto';
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -44,6 +48,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 22px;
   position: relative;
+  font-weight: bold;
 }
 
 nav ul li a::after {
@@ -170,7 +175,7 @@ nav ul li a:hover::after {
 
 .work-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
   gap: 40px;
   margin-top: 50px;
 }
@@ -238,17 +243,21 @@ nav ul li a:hover::after {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid #ff004f;
+  border: 2px solid #ff004f;
   padding: 14px 50px;
   border-radius: 10px;
   text-decoration: none;
+  font-weight: bold;
   color: black;
+  background: rgb(231, 231, 231);
+  font-size: 18px;
   transition: 0.5s;
 
 }
 
 .btn:hover {
   background: #ff004f;
+  color: #fff;
 }
 
 /* --------------- Contact ----------------- */
@@ -269,8 +278,14 @@ nav ul li a:hover::after {
   margin-top: 30px;
 }
 
+.contact-left p a{
+  color: white;
+  font-size: 18px;
+}
+
+
 .contact-left p i {
-  color: #ec3e75;
+  color: white;
   margin-right: 5px;
   font-size: 30px;
 }
@@ -289,16 +304,24 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-  color:#ec3e75;
+  color:#ff004f;
   transform: translateY(-5px);
 }
 
 .btn.btn2{
   display: inline-block;
-  background: #ec3e75;
+  background: rgb(231, 231, 231);
   font-size: 18px;
   font-weight: bold;
+  transition: 0.5s;
 }
+
+.btn.btn2:hover {
+  background:#ff004f;
+  color: white;
+}
+
+
 
 .contact-right form {
   width: 100%;
@@ -321,6 +344,13 @@ form .btn2{
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
+}
+
+#msg{
+  color:greenyellow;
+  margin-top: -28px;
+  display: block;
+  font-size: 20px;
 }
 
 
