@@ -188,16 +188,24 @@
 
 
 <script>
+  //var tablinks = document.getElementsByClassName("tab-links");
+  //var tabcontents = document.getElementsByClassName("tab-contents.active-tab");
+
   var tablinks = document.getElementsByClassName("tab-links");
   var tabcontents = document.getElementsByClassName("tab-contents");
+
   
-  let = "";
+
   function opentab(tabname) {
-    tablinks.forEach(tablink => {
+
+    var tablinksArray = [...tablinks];                 // Convert to Array (remember)
+    var tabcontentsArray = [...tabcontents];
+
+    tablinksArray.forEach(tablink => {
       tablink.classList.remove("active-link");
     });
     
-    tabcontents.forEach(tabcontent => {
+    tabcontentsArray.forEach(tabcontent => {
       tabcontent.classList.remove("active-tab");
     });
     event.currentTarget.classList.add("active-link");
