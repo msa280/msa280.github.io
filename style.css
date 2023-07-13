@@ -140,12 +140,12 @@ nav ul li a:hover::after {
 .para {
   font-size: 22px;
   color: white;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 }
 
 .tab-titles {
   display: flex;
-  margin: 20px 0 40px;
+  margin: 30px 0 40px;
 }
 
 .tab-links {
@@ -154,6 +154,14 @@ nav ul li a:hover::after {
   font-weight: 500;
   cursor: pointer;
   position: relative;
+}
+
+.tab-links:hover {
+  color: #00ff00;
+}
+
+.tab-links.active-link {
+  color: #00ff00;
 }
 
 .tab-links::after {
@@ -168,6 +176,7 @@ nav ul li a:hover::after {
 }
 
 .tab-links.active-link::after {
+  color: #00ff00;
   width: 100%;
 }
 
