@@ -421,7 +421,7 @@ nav .fa-sharp.fa-solid.fa-bars {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   #header {
     background-image: url(images/Hagley\ Rose\ Garden\ Small.jpg);
   }
