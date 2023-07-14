@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto';
+  font-family: 'Trebuchet MS', sans-serif;
   box-sizing: border-box;
 }
 
@@ -83,7 +83,16 @@ nav ul li a:hover::after {
 }
 
 .header-text span {
-  transition: 0.5s;
+  transition: 1s ease-in-out;
+}
+
+.header-text p {
+  transition: 1s ease-in-out;
+}
+
+.header-text:hover p {
+  color: rgb(32, 223, 236);
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
 }
 
 .header-text:hover {
@@ -91,8 +100,8 @@ nav ul li a:hover::after {
 }
 
 .header-text:hover span{
-  color: #ffffff;
-  -webkit-text-stroke: 2px black;
+  color: rgb(32, 223, 236);
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
 }
 
 .header-text h1 {
@@ -101,7 +110,7 @@ nav ul li a:hover::after {
 }
 
 
-/* ------------------------About---------------------- */
+/* ------------------------ About Me ---------------------- */
 
 #about {
   padding: 80px;
@@ -200,7 +209,7 @@ nav ul li a:hover::after {
 }
 
 
-/* --------------- Portfolio ----------------- */
+/* --------------- Projects ----------------- */
 
 #portfolio {
   padding: 50px 0;
@@ -235,8 +244,8 @@ nav ul li a:hover::after {
   height: 0;
   background: linear-gradient(rgba(20, 20, 20, 0.6), #027916);
   border-radius: 30px;
-  position: absolute;
-  left: 0;
+  position:absolute;
+  left: 0px;
   bottom: 0;
   overflow: hidden;
   display: flex;
@@ -418,11 +427,11 @@ nav .fa-sharp.fa-solid.fa-bars {
   }
   .header-text {
     margin-top: 75%;
-    font-size: 20px;
-    width: 75%;
+    width: 95%;
+    margin-left: 2%;
   }
   .header-text h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   nav .fa-solid {
     display: block;
@@ -475,6 +484,15 @@ nav .fa-sharp.fa-solid.fa-bars {
   }
   .contact-left {
     padding-left: 10px;
+  }
+  .work img{
+    width: 90%;
+  }
+  .work:hover img {
+    transform: scale(1);
+  }
+  .layer {
+    width: 90%;
   }
   
 }

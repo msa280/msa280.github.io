@@ -9,276 +9,220 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - M. Haider Saeed</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/4f674c1400.js" crossorigin="anonymous"></script>
 </head>
-<body> 
+<body>
 
-<div id="header">
-  <div class="container">
-    <nav>
-      <img src="images/logo1.png" class="logo">
-      <ul id="sidemenu">
-        <li><a href="#header">Haider</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-      </ul>
-      <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
-    </nav>
+  <!------------------------ Home Screen ---------------------->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo1.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Haider</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </div>
+
+    <div class="header-text">
+      <p><strong>Developer & Tester</strong></p>
+      <h1>Hi! I am <span>Haider</span><br>Saeed from New Zealand</h1>
+    </div>
+
   </div>
 
-  <div class="header-text">
-    <p><strong>Developer & Tester</strong></p>
-    <h1>Hi! I am <span>Haider</span><br>Saeed from New Zealand</h1>
-  </div>
+  <!------------------------ About ---------------------->
 
-</div>
-
-<!------------------------ About ---------------------->
-
-<div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="about-col-1">
-        <img src="images/Light Show.jpg">
-      </div>
-      <div class="about-col-2">
-        <h1 class="sub-title">About Me</h1>
-        <br>
-        <p class="para">I am a computer science graduate who has recently graduated at the 
-          University of Canterbury. My passion for technology and its limitless 
-          possibilities has driven me to pursue a career in the ever-evolving field of
-          computer science. This curiosity has motivated me to delve deeper into these 
-          areas through personal projects and independent study. I believe that continuous 
-          learning is essential in the fast-paced world of technology, and I strive to stay
-          updated with the latest advancements and trends.
-        </p>
-        <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-          <p class="tab-links" onclick="opentab('education')">Education</p>
-          <p class="tab-links" onclick="opentab('work')">Work</p>
-          <p class="tab-links" onclick="opentab('awards')">Achievements</p>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/Light Show.jpg">
         </div>
-        <div class="tab-contents active-tab" id="skills">
-          <ul>
-            <li><span>Python</span><br>Build Control & Management</li>
-            <li><span>Java / C / C++</span><br>Applications & Software Development</li>
-            <li><span>HTML / CSS / Javascript</span><br>UI/UX. Web & App Design</li>
-            <li><span>PHP / MySQL / SQL</span><br>Relational Database Management Systems</li>
-            <li><span>Prolog</span><br>Declarative Programming.</li>
-            <li><span>Windows / Linux / Android</span><br>Operating Systems</li>
-            <li><span>GitHub</span><br>Version Control</li>
-          </ul>
-        </div>
-        <div class="tab-contents" id="education">
-          <ul>
-            <li><span>2020-2023</span><br>University of Canterbury - Bachelor of Science (Computer Science)</li>
-            <li><span>2017-2020</span><br>Lahore Grammar School - Cambridge O-Levels & A-Levels</li>
-            <li><span>2016</span><br>Beaconhouse School - Cambridge O-Levels</li>
-            <li><span>2015</span><br>Manarat Al Riyadh International</li>
-            <li><span>2012-2014</span><br>Shorouq Al Mamlakah International School</li>
-          </ul>
-        </div>
-        <div class="tab-contents" id="work">
-          <ul>
-            <li><span>Dominos Pizza Halswell (Dec 2022 - Jan 2023)</span><br>Worked as a delivery driver and kitchen cook. Prepared and delivered pizza for customers.</li>
-            <li><span>Pak N Save Hornby (Dec 2021 - Jan 2022)</span><br>Worked a graveyard shift where I managed inventory, organized products, and restocked shelves.</li>
-            <li><span>Traffic Management Matters (Part Time)</span><br>Worked as a flag person to manage the flow of traffic.</li>
-            <li><span>Mentor Tutoring (Voluntary)</span><br>Voluntarily taught three peers Python programming language.<br>Helped the students achieve their desired grades and did free of cost for my personal teaching experience.</li>
-            <li><span>Fiverr Freelancing</span><br>Ran gigs on Fiverr to improve my coding skills and gain experience.</li>
-          </ul>
-        </div>
-        <div class="tab-contents" id="awards">
-          <ul>
-            <li><span>Bachelor of Science (Computer Science)</span><br>Completed the Bachelor of Science in Computer Science.</li>
-            <li><span>Univeristy Class Rep</span><br>Acted as Class Rep for three different course subjects.</li>
-            <li><span>SAT Score - 1300</span><br>Maths - 710/800 & English - 590/800.</li>
-            <li><span>7 A's in O-Level</span><br>Received a certificate and trophy for achieving 7 A’s in GCE O-Levels. Name in Hall of Fame.</li>
-            <li><span>75% Total Fee Scholariship</span><br>Awarded 75% total fee scholarship for my A-levels program based on my O-Levels result.</li>
-            <li><span>Basketball Gold Medallist</span><br>Competed in and won an Inter-School Basketball Competition.</li>
-
-          </ul>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <br>
+          <p class="para">I am a computer science graduate who has recently graduated at the 
+            University of Canterbury. My passion for technology and its limitless 
+            possibilities has driven me to pursue a career in the ever-evolving field of
+            computer science. This curiosity has motivated me to delve deeper into these 
+            areas through personal projects and independent study. I believe that continuous 
+            learning is essential in the fast-paced world of technology, and I strive to stay
+            updated with the latest advancements and trends.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('work')">Work</p>
+            <p class="tab-links" onclick="opentab('awards')">Achievements</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Python</span><br>Build Control & Management</li>
+              <li><span>Java / C / C++</span><br>Applications & Software Development</li>
+              <li><span>HTML / CSS / Javascript</span><br>UI/UX. Web & App Design</li>
+              <li><span>PHP / MySQL / SQL</span><br>Relational Database Management Systems</li>
+              <li><span>Prolog</span><br>Declarative Programming.</li>
+              <li><span>Windows / Linux / Android</span><br>Operating Systems</li>
+              <li><span>GitHub</span><br>Version Control</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2020-2023</span><br>University of Canterbury - Bachelor of Science (Computer Science)</li>
+              <li><span>2017-2020</span><br>Lahore Grammar School - Cambridge O-Levels & A-Levels</li>
+              <li><span>2016</span><br>Beaconhouse School - Cambridge O-Levels</li>
+              <li><span>2015</span><br>Manarat Al Riyadh International</li>
+              <li><span>2012-2014</span><br>Shorouq Al Mamlakah International School</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="work">
+            <ul>
+              <li><span>Dominos Pizza Halswell (Dec 2022 - Jan 2023)</span><br>Worked as a delivery driver and kitchen cook. Prepared and delivered pizza for customers.</li>
+              <li><span>Pak N Save Hornby (Dec 2021 - Jan 2022)</span><br>Worked a graveyard shift where I managed inventory, organized products, and restocked shelves.</li>
+              <li><span>Traffic Management Matters (Part Time)</span><br>Worked as a flag person to manage the flow of traffic.</li>
+              <li><span>Mentor Tutoring (Voluntary)</span><br>Voluntarily taught three peers Python programming language.<br>Helped the students achieve their desired grades and did free of cost for my personal teaching experience.</li>
+              <li><span>Fiverr Freelancing</span><br>Ran gigs on Fiverr to improve my coding skills and gain experience.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="awards">
+            <ul>
+              <li><span>Bachelor of Science (Computer Science)</span><br>Completed the Bachelor of Science in Computer Science.</li>
+              <li><span>Univeristy Class Rep</span><br>Acted as Class Rep for three different course subjects.</li>
+              <li><span>SAT Score - 1300</span><br>Maths - 710/800 & English - 590/800.</li>
+              <li><span>7 A's in O-Level</span><br>Received a certificate and trophy for achieving 7 A’s in GCE O-Levels. Name in Hall of Fame.</li>
+              <li><span>75% Total Fee Scholariship</span><br>Awarded 75% total fee scholarship for my A-levels program based on my O-Levels result.</li>
+              <li><span>Basketball Gold Medallist</span><br>Competed in and won an Inter-School Basketball Competition.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<!------------------------ My Projects ---------------------->
+  <!------------------------ My Projects ---------------------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/proj1.PNG"/>
+          <div class="layer">
+            <h3>Optical Illusion Art Gallery</h3>
+            <p>Created a graphical scene and a short physics simulation using OpenGL & C++</p>
+            <a href="https://github.com/msa280/3D-Optical-Illusion-Art-Gallery" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/proj3.JPG">
+          <div class="layer">
+            <h3>Beer Recommender</h3>
+            <p>Used data analytics and algorithms on beer datasets in Apache Spark & Python. Program recommends beers 
+            based on similarity attributes & ratings.</p>
+            <a href="https://colab.research.google.com/drive/1bXeysMTZRAwWGiDwCY1Sw-JcvkwE7R8O?usp=drive_link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/proj2.JPG">
+          <div class="layer">
+            <h3>Ray Traced Scene</h3>
+            <p>Created a graphical scene using ray tracing concepts and physics. Created using OpenGL & C++.</p>
+            <a href="https://github.com/msa280/Raytracer-Objects-and-Visual-Realism" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/proj4.PNG">
+          <div class="layer">
+            <h3>Interactive Game</h3>
+            <p>Created a game in Java using Eclipse. The game was made using concepts from software engineering and other various mathematical functions.</p>
+            <a href="https://github.com/msa280/SENG201-Project-Monster-Fighter-Game" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="work-list">
 
-<div id="portfolio">
-  <div class="container">
-    <h1 class="sub-title">My Projects</h1>
-    <div class="work-list">
-      <div class="work">
-        <img src="images/proj1.PNG"/>
-        <div class="layer">
-          <h3>Optical Illusion Art Gallery</h3>
-          <p>Created a graphical scene and a short physics simulation using OpenGL & C++</p>
-          <a href="https://github.com/msa280/3D-Optical-Illusion-Art-Gallery" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        <div class="work">
+          <img src="images/proj5.JPG"/>
+          <div class="layer">
+            <h3>Language Compiler</h3>
+            <p>Created a small language compiler in Python. Project contains a language scanner and other implemented methods for reading the tokens.</p>
+            <a href="https://github.com/msa280/COSC261-Language-Compiler" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
         </div>
-      </div>
-      <div class="work">
-        <img src="images/proj3.JPG">
-        <div class="layer">
-          <h3>Beer Recommender</h3>
-          <p>Used data analytics and algorithms on beer datasets in Apache Spark & Python. Program recommends beers 
-          based on similarity attributes & ratings.</p>
-          <a href="https://colab.research.google.com/drive/1bXeysMTZRAwWGiDwCY1Sw-JcvkwE7R8O?usp=drive_link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        <div class="work">
+          <img src="images/proj6.JPG"/>
+          <div class="layer">
+            <h3>Socket Programming</h3>
+            <p>Implemented socket programming in Python. Program enables us to fluently exchange & transfer information between the client and the server.</p>
+            <a href="https://github.com/msa280/COSC264-Socket-Programming" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
         </div>
-      </div>
-      <div class="work">
-        <img src="images/proj2.JPG">
-        <div class="layer">
-          <h3>Ray Traced Scene</h3>
-          <p>Created a graphical scene using ray tracing concepts and physics. Created using OpenGL & C++.</p>
-          <a href="https://github.com/msa280/Raytracer-Objects-and-Visual-Realism" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        <div class="work">
+          <img src="images/proj7.gif"/>
+          <div class="layer">
+            <h3>Bomb Defusers</h3>
+            <p>Created an LED game in C using ATmega32 microchip and motherboard. A memory game where players has to memorize the LED patterns and then guess them accordingly. Game difficulty increases with levels.</p>
+            <a href="https://github.com/msa280/ENCE260-Microcontroller-Game-ATmega32t" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
         </div>
-      </div>
-      <div class="work">
-        <img src="images/proj4.PNG">
-        <div class="layer">
-          <h3>Interactive Game</h3>
-          <p>Created a game in Java using Eclipse. The game was made using concepts from software engineering and other various mathematical functions.</p>
-          <a href="https://github.com/msa280/SENG201-Project-Monster-Fighter-Game" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        <div class="work">
+          <img src="images/proj8.PNG"/>
+          <div class="layer">
+            <h3>RIPv2 Routing Protocol</h3>
+            <p>Implemented the RIPv2 Routing Protocol in Python. Developed functions to create, package and send packets to multiple routers. Added functionality such as route handling, dead routers and split horizon with poisoned reverse.</p>
+            <a href="https://github.com/msa280/COSC364-RIPv2-Project/tree/main" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="work-list">
-
-      <div class="work">
-        <img src="images/proj5.JPG"/>
-        <div class="layer">
-          <h3>Language Compiler</h3>
-          <p>Created a small language compiler in Python. Project contains a language scanner and other implemented methods for reading the tokens.</p>
-          <a href="https://github.com/msa280/COSC261-Language-Compiler" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="images/proj6.JPG"/>
-        <div class="layer">
-          <h3>Socket Programming</h3>
-          <p>Implemented socket programming in Python. Program enables us to fluently exchange & transfer information between the client and the server.</p>
-          <a href="https://github.com/msa280/COSC264-Socket-Programming" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="images/proj7.gif"/>
-        <div class="layer">
-          <h3>Bomb Defusers</h3>
-          <p>Created an LED game in C using ATmega32 microchip and motherboard. A memory game where players has to memorize the LED patterns and then guess them accordingly. Game difficulty increases with levels.</p>
-          <a href="https://github.com/msa280/ENCE260-Microcontroller-Game-ATmega32t" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="images/proj8.PNG"/>
-        <div class="layer">
-          <h3>RIPv2 Routing Protocol</h3>
-          <p>Implemented the RIPv2 Routing Protocol in Python. Developed functions to create, package and send packets to multiple routers. Added functionality such as route handling, dead routers and split horizon with poisoned reverse.</p>
-          <a href="https://github.com/msa280/COSC364-RIPv2-Project/tree/main" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-
-    </div>
-    <!-------<a href="#" class="btn">See more</a>------->
-
   </div>
-</div>
 
-<!------------------------ Contacts ---------------------->
-<div id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h1 class="sub-title">Contact Me</h1>
-        <p><i class="fa-solid fa-square-envelope"></i> haider567@hotmail.com</p>
-        <p><i class="fa-solid fa-square-phone"></i><a href="tel:+64210706558">+64 210 706 558</a></p>
-        
-        <div class="social-icons">
-          <a href="https://github.com/msa280" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-          <a href="https://www.linkedin.com/in/haider-s-5a176057/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.facebook.com/Haider.Saeed.7.1.2000" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-          <a href="https://www.instagram.com/haider__.7/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"> <i class="fa-brands fa-square-instagram"></i></a>
-          <a href="https://twitter.com/haider_saeed7" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+  <!------------------------ Contacts ---------------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-square-envelope"></i> haider567@hotmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i><a href="tel:+64210706558">+64 210 706 558</a></p>
+          
+          <div class="social-icons">
+            <a href="https://github.com/msa280" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.linkedin.com/in/haider-s-5a176057/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/Haider.Saeed.7.1.2000" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/haider__.7/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"> <i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://twitter.com/haider_saeed7" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+          </div>
+          <a href="images/M-Haider-Saeed-CV.pdf" download class="btn btn2" target="_blank">View CV</a>
         </div>
-        <a href="images/M-Haider-Saeed-CV.pdf" download class="btn btn2" target="_blank">View CV</a>
-      </div>
-      <div class="contact-right">
-        <form name="submit-to-google-sheet">
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="Email" placeholder="Your Email" required>
-          <textarea name="Message" rows="7" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn btn2">Submit</button>
-        </form>
-        <span id="msg"></span>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="7" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
       </div>
     </div>
+
+    <!------------------------ Footer ---------------------->
+    <div class="copyright">
+      <p>Copyright <i class="fa-regular fa-copyright"></i> M. Haider Saeed - BSc CS. Christchurch, New Zealand. <i class="fa-solid fa-kiwi-bird"></i></p>
+    </div>
   </div>
-  <div class="copyright">
-    <p>Copyright <i class="fa-regular fa-copyright"></i> M. Haider Saeed - BSc CS. Christchurch, New Zealand. <i class="fa-solid fa-kiwi-bird"></i></p>
-  </div>
-</div>
-
-
-
-<!------------------------ Javascript ---------------------->
-
-
-<script>
-  var tablinks = document.getElementsByClassName("tab-links");
-  var tabcontents = document.getElementsByClassName("tab-contents");
-
-  function opentab(tabname) {
-
-    var tablinksArray = [...tablinks];                 // Convert to Array (remember)
-    var tabcontentsArray = [...tabcontents];
-
-    tablinksArray.forEach(tablink => {
-      tablink.classList.remove("active-link");
-    });
-    
-    tabcontentsArray.forEach(tabcontent => {
-      tabcontent.classList.remove("active-tab");
-    });
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add('active-tab');
-  }
-</script>
-
-<!------------------Form to Google Sheet ------------->
-<!--- Code Credit: https://github.com/jamiewilson/form-to-google-sheets -->
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbw2Wr_CGt-ZWxl1XAkN61lqlLYzY3eHoFb29xqDPPRiVQ6F6VaJaf9WHRkJT68qfLJZqg/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message has been successfully sent to Haider :)"
-        setTimeout(function(){
-          msg.innerHTML = ""
-        }, 10000)
-        form.reset()
-    })
-    .catch(error => console.error('Error!', error.message))
-  })
-</script>
-
-<script>
-  var sidemenu = document.getElementById("sidemenu");
-
-  function openmenu(){
-    sidemenu.style.right = "0";
-  }
-
-  function closemenu(){
-    sidemenu.style.right = "-170px";
-  }
-</script>
-
 
 </body>
-</html>
+<script src="script.js"></script>  
+<script src="https://kit.fontawesome.com/4f674c1400.js" crossorigin="anonymous"></script>  
+</html>   
+
+<!-- Note!!!: Javascript should be placed in footer of html document wherever possible.
+Javascript execution blocks rendering of html page as there may be css style and html
+creation/edit code in javascript. So browser waits till the whole execution of that javascript
+ is over before rendering subsequent html. ----->
