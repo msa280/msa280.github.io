@@ -18,18 +18,20 @@
   <div class="container">
     <nav>
       <img src="images/logo.png" class="logo">
-      <ul>
+      <ul id="sidemenu">
         <li><a href="#header">Haider</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#portfolio">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
       </ul>
+      <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
     </nav>
   </div>
 
   <div class="header-text">
     <p><strong>Developer & Tester</strong></p>
-    <h1>Hi! I am <span>Haider</span> <br> Saeed from New Zealand</h1>
+    <h1>Hi! I am <span>Haider</span><br>Saeed from New Zealand</h1>
   </div>
 
 </div>
@@ -45,7 +47,7 @@
       <div class="about-col-2">
         <h1 class="sub-title">About Me</h1>
         <br>
-        <p class="para">I am a computer science graduate who recently completed my studies at the 
+        <p class="para">I am a computer science graduate who has recently graduated at the 
           University of Canterbury. My passion for technology and its limitless 
           possibilities has driven me to pursue a career in the ever-evolving field of
           computer science. This curiosity has motivated me to delve deeper into these 
@@ -56,19 +58,47 @@
         <div class="tab-titles">
           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
           <p class="tab-links" onclick="opentab('education')">Education</p>
+          <p class="tab-links" onclick="opentab('work')">Work</p>
+          <p class="tab-links" onclick="opentab('awards')">Achievements</p>
         </div>
         <div class="tab-contents active-tab" id="skills">
           <ul>
-            <li><span>Python:</span><br>Build Control and Management</li>
-            <li><span>Java:</span><br>Java Applications</li>
-            <li><span>UI/UX:</span><br>Web & App Design</li>
+            <li><span>Python</span><br>Build Control & Management</li>
+            <li><span>Java / C / C++</span><br>Applications & Software Development</li>
+            <li><span>HTML / CSS / Javascript</span><br>UI/UX. Web & App Design</li>
+            <li><span>PHP / MySQL / SQL</span><br>Relational Database Management Systems</li>
+            <li><span>Prolog</span><br>Declarative Programming.</li>
+            <li><span>Windows / Linux / Android</span><br>Operating Systems</li>
+            <li><span>GitHub</span><br>Version Control</li>
           </ul>
         </div>
         <div class="tab-contents" id="education">
           <ul>
-            <li><span>2020-2023</span><br>University of Canterbury - Bachelor of Science in Computer Science</li>
+            <li><span>2020-2023</span><br>University of Canterbury - Bachelor of Science (Computer Science)</li>
             <li><span>2017-2020</span><br>Lahore Grammar School - Cambridge O-Levels & A-Levels</li>
             <li><span>2016</span><br>Beaconhouse School - Cambridge O-Levels</li>
+            <li><span>2015</span><br>Manarat Al Riyadh International</li>
+            <li><span>2012-2014</span><br>Shorouq Al Mamlakah International School</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="work">
+          <ul>
+            <li><span>Dominos Pizza Halswell (Dec 2022 - Jan 2023)</span><br>Worked as a delivery driver and kitchen cook. Prepared and delivered pizza for customers.</li>
+            <li><span>Pak N Save Hornby (Dec 2021 - Jan 2022)</span><br>Worked a graveyard shift where I managed inventory, organized products, and restocked shelves.</li>
+            <li><span>Traffic Management Matters (Part Time)</span><br>Worked as a flag person to manage the flow of traffic.</li>
+            <li><span>Mentor Tutoring (Voluntary)</span><br>Voluntarily taught three peers Python programming language.<br>Helped the students achieve their desired grades and did free of cost for my personal teaching experience.</li>
+            <li><span>Fiverr Freelancing</span><br>Ran gigs on Fiverr to improve my coding skills and gain experience.</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="awards">
+          <ul>
+            <li><span>Bachelor of Science (Computer Science)</span><br>Completed the Bachelor of Science in Computer Science.</li>
+            <li><span>Univeristy Class Rep</span><br>Acted as Class Rep for three different course subjects.</li>
+            <li><span>SAT Score - 1300</span><br>Maths - 710/800 & English - 590/800.</li>
+            <li><span>7 A's in O-Level</span><br>Received a certificate and trophy for achieving 7 A’s in GCE O-Levels. Name in Hall of Fame.</li>
+            <li><span>75% Total Fee Scholariship</span><br>Awarded 75% total fee scholarship for my A-levels program based on my O-Levels result.</li>
+            <li><span>Basketball Gold Medallist</span><br>Competed in and won an Inter-School Basketball Competition.</li>
+
           </ul>
         </div>
       </div>
@@ -167,8 +197,11 @@
         <p><i class="fa-solid fa-square-phone"></i><a href="tel:+64210706558">+64 210 706 558</a></p>
         
         <div class="social-icons">
-          <a href="https://www.facebook.com/Haider.Saeed.7.1.2000" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://github.com/msa280" target="_blank"><i class="fa-brands fa-square-github"></i></a>
           <a href="https://www.linkedin.com/in/haider-s-5a176057/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/Haider.Saeed.7.1.2000" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/haider__.7/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"> <i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://twitter.com/haider_saeed7" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
         </div>
         <a href="images/M-Haider-Saeed-CV.pdf" download class="btn btn2" target="_blank">View CV</a>
       </div>
@@ -180,21 +213,22 @@
           <button type="submit" class="btn btn2">Submit</button>
         </form>
         <span id="msg"></span>
-        
       </div>
     </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright <i class="fa-regular fa-copyright"></i> M. Haider Saeed - BSc CS. Christchurch, New Zealand. <i class="fa-solid fa-kiwi-bird"></i></p>
   </div>
 </div>
 
 
-<script>
-  //var tablinks = document.getElementsByClassName("tab-links");
-  //var tabcontents = document.getElementsByClassName("tab-contents.active-tab");
 
+<!------------------------ Javascript ---------------------->
+
+
+<script>
   var tablinks = document.getElementsByClassName("tab-links");
   var tabcontents = document.getElementsByClassName("tab-contents");
-
-  
 
   function opentab(tabname) {
 
@@ -233,5 +267,19 @@
     .catch(error => console.error('Error!', error.message))
   })
 </script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu(){
+    sidemenu.style.right = "-170px";
+  }
+</script>
+
+
 </body>
 </html>
