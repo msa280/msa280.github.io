@@ -19,7 +19,8 @@ body {
   height: 100vh;
   background-image: url(images/Hagley\ Rose\ Garden.jpg);
   background-size: cover;
-  background-position: center;
+  background-position:center;
+  border: 6px solid yellow;
 }
 
 .container {
@@ -421,9 +422,13 @@ nav .fa-sharp.fa-solid.fa-bars {
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
   #header {
     background-image: url(images/Hagley\ Rose\ Garden\ Small.jpg);
+  }
+  #about {
+    padding: 10px;
+    margin-right: 2%;
   }
   .header-text {
     margin-top: 75%;
@@ -454,10 +459,8 @@ nav .fa-sharp.fa-solid.fa-bars {
     display: block;
     margin: 25px;
   }
-  nav ul .fa-solid{
-    position: absolute;
-    top: 25px;
-    left: 25px;
+  .fa-xmark{
+    position:absolute;
     color: #ffffff;
   }
   .sub-title {
@@ -468,6 +471,9 @@ nav .fa-sharp.fa-solid.fa-bars {
   }
   .about-col-1 {
     margin-bottom: 30px;
+  }
+  .about-col-1.img {
+    width: 40%;
   }
   .about-col-2 {
     font-size: 14px;
@@ -494,7 +500,6 @@ nav .fa-sharp.fa-solid.fa-bars {
   .layer {
     width: 90%;
   }
-  
 }
 
 
