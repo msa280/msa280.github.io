@@ -377,6 +377,11 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(0, 0, 0);
+  opacity: 1; /* Firefox */
+}
+
 form input, form textarea{
   width: 100%;
   border: 0;
