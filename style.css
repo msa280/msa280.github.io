@@ -52,8 +52,7 @@ nav ul li a {
   font-size: 22px;
   position: relative;
   font-weight: bold;
-  font-family: fantasy;
-  letter-spacing: 1px;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 
 nav ul li a::after {
