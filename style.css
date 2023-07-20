@@ -284,6 +284,14 @@ nav ul li a:hover::after {
   height: 60px;
   border-radius: 50%;
   text-align: center;
+  box-shadow: 0 0 5px #ec3e75, 0 0 25px #ec3e75;
+  transition: 0.5s ease-in-out;
+}
+
+.layer a:hover {
+  color: white;
+  background-color:#ec3e75;
+  box-shadow: 0 0 5px #ec3e75, 0 0 25px#ec3e75, 0 0 50px #ec3e75, 0 0 100px #ec3e75, 0 0 200px #ec3e75;
 }
 
 .work:hover img {
@@ -340,14 +348,33 @@ nav ul li a:hover::after {
   font-size: 40px;
   padding-top: 10px;
   margin-right: 10px;
-  color: white;
   display: inline-block;
   transition: 0.5s;
 }
 
+.fa-square-github {
+  color: rgb(154, 154, 158);
+}
+
+.fa-linkedin {
+  color: rgba(10,102,194,255);
+}
+
+.fa-square-facebook {
+  color: rgba(56,86,158,255);
+}
+
+.fa-square-instagram {
+  color:#ec3e75;
+}
+
+.fa-square-twitter {
+  color: rgba(29,161,242,255);
+}
+
 .social-icons a:hover {
   color:#00ff0d;
-  transform: translateY(-10px);
+  transform: translateY(-15px);
 }
 
 .btn {
@@ -360,7 +387,8 @@ nav ul li a:hover::after {
   text-decoration: none;
   color: black;
   font-size: 18px;
-  background: linear-gradient(to left, rgb(180, 180, 180) 50%, rgb(92, 252, 100) 50%) right;
+  font-weight: bold;
+  background: linear-gradient(to left, rgb(147, 226, 154) 50%, rgb(0, 245, 12) 50%) right;
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
@@ -370,7 +398,6 @@ nav ul li a:hover::after {
 .btn:hover {
   background-position: left;
   border-color: #007013;
-  font-weight: bold;
 }
 
 .contact-right form {
@@ -434,7 +461,6 @@ nav .fa-sharp.fa-solid.fa-bars {
   position: fixed;
   padding-left: 85%;
 }
-
 
 @media only screen and (max-width: 600px) {
   #header {
