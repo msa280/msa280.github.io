@@ -20,7 +20,7 @@ function opentab(tabname) {
 
 //-------------------------------- Form to Google Sheet --------------------------------->
 // ----- Code Credit: https://github.com/jamiewilson/form-to-google-sheets ----->
-const scriptURL = 'https://script.google.com/macros/s/AKfycbw2Wr_CGt-ZWxl1XAkN61lqlLYzY3eHoFb29xqDPPRiVQ6F6VaJaf9WHRkJT68qfLJZqg/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw7elGMPm0Yc8pRnkt_msaM5kWKzGy7nFuBilEvRrpHiB5XN8GAtvuPF9vTE5LY50X3wA/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")
 
